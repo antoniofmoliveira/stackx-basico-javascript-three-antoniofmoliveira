@@ -2,8 +2,8 @@
 function calcularRetangulo(retangulo) {
     // Sua implementação aqui
     return {
-        "perimetro": retangulo.largura* 2 + retangulo.altura * 2,
-        "area": retangulo.altura * retangulo.largura,
+        perimetro: retangulo.largura * 2 + retangulo.altura * 2,
+        area: retangulo.altura * retangulo.largura,
     };
 }
 

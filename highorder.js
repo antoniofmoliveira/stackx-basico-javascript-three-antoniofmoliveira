@@ -25,5 +25,5 @@ function filtrarPares(numeros) {
 module.exports = {
     dobrarNumeros,
     somarValores,
-    filtrarPares
+    filtrarPares,
 };
