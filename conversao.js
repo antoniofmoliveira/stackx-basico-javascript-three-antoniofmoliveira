@@ -13,7 +13,9 @@ function convertToString(number) {
 // Converte um valor para um booleano
 function convertToBoolean(value) {
     // Sua implementação aqui
-    return value === "false" || value === "0" || value == [] || Boolean(value);
+    return value === "false" || value === "0"  || (value && value.length===0)
+        ? false
+        : Boolean(value);
 }
 
 module.exports = { convertToInt, convertToString, convertToBoolean };

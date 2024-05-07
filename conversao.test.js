@@ -27,3 +27,20 @@ test('converte o valor 0 para o booleano false', () => {
 test('converte a string "true" para o booleano true', () => {
     expect(convertToBoolean('true')).toBe(true);
 });
+
+test('converte o objeto mesmo vazio para o booleano true', () => {
+    expect(convertToBoolean({})).toBe(true);
+});
+
+// testes abaixo para situacoes especificas que eu prefiro que retorne falso
+test('converte a string "false" para o booleano false', () => {
+    expect(convertToBoolean('false')).toBe(false);
+});
+
+test('converte a string "0" para o booleano false', () => {
+    expect(convertToBoolean('0')).toBe(false);
+});
+
+test('converte o array vazio [] para o booleano false', () => {
+    expect(convertToBoolean([])).toBe(false);
+});
